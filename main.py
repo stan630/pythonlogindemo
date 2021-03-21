@@ -32,7 +32,7 @@ def index():
             print(row)
             if row:
                 session['username'] = username
-                flash("You are logged in as" + " " + username + " !", "success")
+                flash("You are logged in as" + ' '  + username.upper(), "success")
                 return render_template('profile.html')
             else:
                 flash ("You entered an incorrect username and/or password!", "warning")
