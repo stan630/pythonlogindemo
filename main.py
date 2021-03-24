@@ -74,7 +74,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    return redirect('index')
+    return redirect(url_for('index'))
 
 @app.route('/profile')
 def profile():
