@@ -1,16 +1,31 @@
 {% extends 'layout.html' %}
   {% block main %}
 
-<form class="form-signin" action="" method="post">
-    <h2 class="form-signin-heading">Register</h2>
-    <label for="inputUsername" class="sr-only">Username</label>
-    <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
-    <label for="inputEmail" class="sr-only">Email</label>
-    <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Email address" required>
+<form action="" method="post">
+    <h3>Register</h3>
+
+    <div class="form-group row">
+      <label for="inputUsername" class="col-form-label text-md-right col-md-2">Username</label>
+      <div class="col-md-10">
+        <input class="form-control" type="text" id="inputUsername" name="username"  placeholder="Username" required autofocus>
+      </div>
+    </div> <!-- form-group -->
     
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    <div class="form-group row">
+      <label for="inputPassword" class="col-form-label text-md-right col-md-2">Password</label>
+      <div class="col-md-10">
+        <input class="form-control" type="password" id="inputPassword" name="password" " placeholder="Password" required>
+      </div>
+    </div> <!-- form-group -->
+    
+    <div class="form-group row">
+      <label for="inputEmail" class="col-form-label text-md-right col-md-2">Email</label>
+      <div class="col-md-10">
+        <input class="form-control" type="text" id="inputEmail" name="email"  placeholder="Email address" required>
+      </div>
+    </div> <!-- form-group -->
+    
+    <button class="btn btn-md btn-primary btn-block offset-md-2 mt-2" type="submit">Register</button>
   </form>
 
   {% endblock %}

@@ -1,3 +1,7 @@
 body {
     font-family: 'Roboto';
 }
+
+input[type=text], input[type=password] {
+    width: 75%; 
+}
